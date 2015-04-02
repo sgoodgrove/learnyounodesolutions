@@ -7,7 +7,6 @@ var listenPort = process.argv[2];
 var server = http.createServer();
 
 server.on('request', function(message, response) {
-	console.log(message.method);
 	if (message.method != "POST") {
 		repsonse.statusCode = 500;
 		response.end();
