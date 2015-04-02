@@ -1,10 +1,10 @@
 var http = require('http');
 var map = require('through2-map');
+var url = require('url');
 
 var listenPort = process.argv[2];
 
-var server = http.createServer(function(request, response) {
-	});
+var server = http.createServer();
 
 server.on('request', function(message, response) {
 	console.log(message.method);
