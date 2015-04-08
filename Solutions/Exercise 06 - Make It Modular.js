@@ -1,4 +1,4 @@
-var module = require('./Exercise 6 - Make It Modular module.js');
+var module = require('./Exercise 06 - Make It Modular module.js');
 
 var folderPath = process.argv[2];
 var extensionFilter = process.argv[3];
